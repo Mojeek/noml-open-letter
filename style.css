@@ -1,0 +1,191 @@
+body {
+  font-family: sans-serif, Serif;
+  font-size: 16px;
+  color: #1E1E1E;
+  line-height: 1.35;
+    padding: 60px 0;
+    margin: 0;
+}
+
+code {
+  background: #dedede;
+  padding: 2px 5px;
+  font-size: 14px;
+}
+
+h3 {
+    margin: 2rem 0 .75rem;
+}
+
+th, td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #c7c7c7;
+}
+
+.navbar #buttons {
+    display: none;
+}
+
+.menu {
+    padding: 0;
+    display: flex;
+}
+
+.menu a {
+    display: inline-block;
+    width: 33%;
+    margin: 0;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* STUFF FOR BIGGER SCREENS*/
+@media screen and (min-width: 600px) {
+     ol#individuals {
+        width: 100%;
+      columns: 1;
+      display:inline;
+      font-size: 14px;
+      float: left;
+      text-align: center;
+      list-style-type: none;
+      padding: 0.5em;
+      }
+
+    ul#orgco {
+      column-count: 3;
+    }
+
+    table#buttons {
+      width: 33%;
+      }
+
+    ul {
+      column-count: 4;
+    }
+
+    .container {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+}
+
+/* STUFF FOR SMALLER SCREENS*/
+@media screen and (max-width: 600px) {
+     ol#individuals {
+      width: 100%;
+      columns: 1;
+      display:inline;
+      float: left;
+      text-align: center;
+      font-size: 14px;
+      list-style-type: none;
+      padding: 0.5em;
+      }
+
+    table#logos {
+      width: 100%;
+      }
+
+
+    ul {
+      column-count: 1;
+      }
+
+    .container {
+      max-width: 70%;
+      margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 991px) {
+
+    #header .socials,
+    .socials-header {
+        display: none;
+    }
+
+    body h1:first-of-type {
+        margin-top: 0;
+    }
+
+    .navbar {
+        position: relative;
+        left: auto;
+        top: auto;
+        background: none;
+        border-left: 1px solid #ddd;
+    }
+
+    .navbar #buttons {
+        margin: 20px 0;
+        display: table;
+        width: 100%;
+    }
+
+    .container {
+        max-width: 960px
+    }
+
+    .main-container {
+        display: flex;
+        gap: 2rem;
+    }
+
+    #header {
+        width: 75%;
+    }
+
+    .navbar {
+        width: 25%;
+        padding-top: 0;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .navbar .inner {
+        position: sticky;
+        top: 20px;
+    }
+
+    .menu a {
+        width: 100%;
+        padding: 15px;
+        display: block;
+        border-bottom: 1px solid #ddd;
+        box-sizing: border-box;
+    }
+
+    .menu .btn-sign {
+        background: #7ABB3B;
+        padding: 10px;
+        border: 1px solid #599e2d;
+        border-radius: 8px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu .btn-sign:hover {
+        text-decoration: underline;
+    }
+}

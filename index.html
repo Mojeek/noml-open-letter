@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="robots" content="noml">
+	<meta name="description" content="sign the open letter proposing noml, a specification for those who want content searchable on search engines, but not used for machine learning.">
+    <!-- Where /images/noml.jpeg is referenced it needs to be REPLACED with something to display on socials -->
+	<meta name="twitter:card" content="/images/noml.jpeg">
+	<meta name="twitter:site" content="noml.info">
+	<meta name="twitter:title" content="noml open letter">
+	<meta name="twitter:description" content="sign the open letter proposing noml, a specification for those who want content searchable on search engines, but not used for machine learning.">
+	<meta name="twitter:url" content="https://noml.info">
+	<meta name="twitter:image" content="/images/noml.jpeg">
+	<meta name="twitter:creator" content="@mojeek">
+	<meta property="og:title" content="noml open letter">
+	<meta property="og:description" content="sign the open letter proposing noml, a specification for those who want content searchable on search engines, but not used for machine learning.">
+	<meta property="og:url" content="https://noml.info">
+	<meta property="og:site_name" content="noml.info">
+	<meta property="og:image" content="/images/noml.jpeg">
+	<meta charset="utf-8">
+	<link href="style.css" rel="stylesheet" type="text/css" media="all">
+	<title>NoML Open Letter</title>
+	<link rel="icon" type="image/x-icon" href="./images/svg/search.svg">
+	<script src="./signatures/signatures.js" charset="utf-8"></script>
+	<script>
+		const shuffle = (array) => {
+  	for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  			}
+		};
+		window.addEventListener("load", () => {
+			const olIndividuals = document.getElementById("individuals")
+			olIndividuals.innerHTML = ""
+  		  shuffle(individuals);
+			individuals.forEach((individual) => {
+				let li = document.createElement("li")
+				let a = document.createElement("a")
+				let i = document.createElement("i")
+				let br = document.createElement("br")
+				a.href = individual.url
+				a.innerText = individual.name
+				i.innerText = `${individual.affiliation}`
+				li.appendChild(a)
+				li.appendChild(br)
+				li.appendChild(i)
+				olIndividuals.appendChild(li)
+			})
+		})
+	</script>
+</head>
+<body>
+ 	<div class="container main-container">
+		<section id="header">
+			<br>
+			<h1>NoML Open Letter</h1>
+			<p>A specification for those who want content searchable on search engines, but not used for machine learning.</p>
+			<p>Publishers need improved ways to indicate how they want content to be used in search and machine learning. Using robots.txt does not cover all use cases, and so a complementary approach is needed as proposed here. It is one which can be applied to individual webpages as desired, and can be preserved as such in datasets of web content.</p>
+			<p><a href="https://github.com/PrivacyDingus/noml-open-letter/issues/new?assignees=PrivacyDingus&labels=&projects=&template=sign.md&title=SIGN%3A+NAME">Sign the open letter via Github,</a> <strong>or if you'd prefer to</strong>, you can <a href="mailto:josh@mojeek.com?subject=Sign the open letter&body=Please provide your name, a URL if you would like your name to be hyperlinked somewhere, and an affiliation (company, organisation etc.) if relevant. If you are signing the letter as a company or organisation, consider attaching a logo">sign the letter via email.</a></p>
+			<h2>NoML Proposal</h2>
+			<h3>Four cases</h3>
+			<p>Blocking a user agent in robots.txt (such as the search spider BingBot) for ML/AI products may also block potential visibility in associated search results. So if you don’t want your content to be used in products which leverage machine learning, you may also lose the benefits of being listed in search results. This is an unacceptable situation where content creators and publishers may be required to make a choice between “all or nothing”. We therefore need an approach which addresses four basic use cases as follows:</p>
+			<table width="100%" align="center" style="padding: 20px; border-spacing: 20px; text-align: center; font-size: 14px;">
+				<tr>
+				    <td width="50%" style="border: 2px solid black; line-height: 20px;"><strong>1.</strong> Do use content for search <br> Do use content for machine learning</td>
+				    <td width="50%" style="border: 2px solid black; line-height: 20px;"><strong>2.</strong> Do use content for search <br> <strong>Do not </strong>use content for machine learning</td>
+				</tr>
+				<tr>
+				    <td width="50%" style="border: 2px solid black; line-height: 20px;"><strong>3. Do not</strong> use content for search <br> Do use content for machine learning</td>
+				    <td width="50%" style="border: 2px solid black; line-height: 20px;"><strong>4. Do not</strong> use content for search <br> <strong>Do not</strong> use content for machine learning</td>
+				</tr>
+			</table>
+			<p>Several suggestions for how to address this issue have been put forward. Here we propose something different, simpler and we think fairer. It is a simple adaptation of how meta and X-Robots tags are already used as we explain below in detail.</p>
+
+			<h3>Explanation and Examples</h3>
+			<p>Since there are many companies scraping/crawling webpages in order to collect data, and often without identifying themselves, a way which addresses more than just search engine crawler bots and using robots.txt is needed. The proposal here is to add a new ‘noml’ value to the already-existing <a href="https://www.semrush.com/blog/robots-meta/">meta and X-Robots tag</a>. Meta robots tags are used already for search engine crawlers, so companies like Google that crawl for their search engine already follow requests made in this way. For example the <code>noindex</code> and <code>nofollow</code> values are used to instruct search engines on how to handle a webpage.</p>
+			<p> Also meta data is stored in Common Crawl whose crawled data is a very common, and often the biggest, source of data used in machine learning and to train AI models. The <code>noindex</code> attribute is used to tell search engines not to include a page in their search results, even though they can crawl the page. This tag is used when a webpage is not intended to be indexed by search engines. The <code>nofollow</code> attribute is used to tell search engines not to follow the links on a webpage. This attribute is used when a webpage that contains links should not be considered as endorsements or recommendations. Similarly the <code>noml</code> could be used to instruct any service (e.g. a search engine or AI builder) that any data from that page should not be used in machine learning.</p>
+
+			<p>This can be simply expressed for HTML pages using:</p>
+			<p><code>&lt;meta name="robots" content="noml"&gt;</code></p>
+
+			<p>and for non-HTML using:</p>
+			<p><code>X-Robots-Tag: noml</code></p>
+
+			<p>Just as for the meta tag, where the name “robots” refers to all user-agent tokens, you can also identify individual user-agents. For example, you can currently request that Google does not include a page in the search results:</p>
+			<p><code>&lt;meta name="googlebot" content="noindex"&gt;</code></p>
+
+			<p>and similarly you could request that Google <strong>does include a page in their search</strong> index, but <strong>does not use the data for machine learning</strong> with:</p>
+			<p><code>&lt;meta name="googlebot" content="noml"&gt;</code></p>
+
+			<p>and request that Microsoft <strong>does not include</strong> a page in their Bing search index and <strong>does not use</strong> the page for training, with:</p>
+			<p><code>&lt;meta name="bingbot" content="noindex, noml"&gt;</code></p>
+
+			<p>you might also request that OpenAI, for example, does not use the page for machine learning with:</p>
+			<p><code>&lt;meta name="gptbot" content="noml"&gt;</code></p>
+
+			<p>however in this case, since OpenAI is not operating a search engine, you could (also) block them from crawling in the <a href="https://en.wikipedia.org/wiki/Robots.txt">robots.txt</a> file using:
+			<p><code>User-agent: gptbot</code><br>
+			<code>Disallow: /</code></p>
+
+			<p>Further examples of are shown below, for HTML and non-HTML:</p>
+			<table width="100%" align="center" style="padding: 10px; text-align: center; border: 1px solid black; font-size: 14px; border-collapse: collapse;">
+			    <tr style="border: 1px solid black; ">
+				<td width="70%" style="border: 1px solid black;"></td>
+				<td style="border: 1px solid black;">Include page in search</td>
+				<td style="border: 1px solid black;">Follow links</td>
+				<td style="border: 1px solid black;">Use in machine learning</td>
+			    </tr>
+			    <tr style="border: 1px solid black;">
+				<td style="text-align: left; border: 1px solid black;"><code>&lt;meta name="robots"&gt;</code><hr><code>X-Robots-Tag:</code></td>
+				<td style="border: 1px solid black; font-size: 22px;"><span>&#x2713;</span></td>
+				<td style="border: 1px solid black; font-size: 22px;"><span>&#x2713;</span></td>
+				<td style="border: 1px solid black; font-size: 22px;"><span>&#x2713;</span></td>
+			    </tr>
+			    <tr style="border: 1px solid black;">
+				<td style="text-align: left; border: 1px solid black;"><code>&lt;meta name="robots" content="noindex"&gt;</code><hr><code>X-Robots-Tag: noindex</code></td>
+				<td style="border: 1px solid black; font-size: 22px;"><span>&#x2715;</span></td>
+				<td style="border: 1px solid black; font-size: 22px;"><span>&#x2713;</span></td>
+				<td style="border: 1px solid black; font-size: 22px;"><span>&#x2713;</span></td>
+			    </tr>
+			    <tr style="border: 1px solid black;">
+				<td style="text-align: left; border: 1px solid black;"><code>&lt;meta name="robots" content="nofollow"&gt;</code><hr><code>X-Robots-Tag: nofollow</code></td>
+				<td style="border: 1px solid black; font-size: 22px;"><span>&#x2713;</span></td>
+				<td style="border: 1px solid black; font-size: 22px;"><span>&#x2715;</span></td>
+				<td style="border: 1px solid black; font-size: 22px;"><span>&#x2713;</span></td>
+			    </tr>
+			    <tr style="border: 1px solid black;">
+				<td style="text-align: left; border: 1px solid black;"><code>&lt;meta name="robots" content="noml"&gt;</code><hr><code>X-Robots-Tag: noml</code></td>
+				<td style="border: 1px solid black; font-size: 22px;"><span>&#x2713;</span></td>
+				<td style="border: 1px solid black; font-size: 22px;"><span>&#x2713;</span></td>
+				<td style="border: 1px solid black; font-size: 22px;"><span>&#x2715;</span></td>
+			    </tr>
+			    <tr style="border: 1px solid black;">
+				<td style="text-align: left; border: 1px solid black;"><code>&lt;meta name="robots" content="noindex, nofollow"&gt;</code><hr><code>X-Robots-Tag: noindex, nofollow</code></td>
+				<td style="border: 1px solid black; font-size: 22px;"><span>&#x2715;</span></td>
+				<td style="border: 1px solid black; font-size: 22px;"><span>&#x2715;</span></td>
+				<td style="border: 1px solid black; font-size: 22px;"><span>&#x2713;</span></td>
+			    </tr>
+			    <tr style="border: 1px solid black;">
+				<td style="text-align: left; border: 1px solid black;"><code>&lt;meta name="robots" content="noindex, nofollow, noml"&gt;</code><hr><code>X-Robots-Tag: noindex, nofollow, noindex</code></td>
+				<td style="border: 1px solid black; font-size: 22px;"><span>&#x2715;</span></td>
+				<td style="border: 1px solid black; font-size: 22px;"><span>&#x2715;</span></td>
+				<td style="border: 1px solid black; font-size: 22px;"><span>&#x2715;</span></td>
+			    </tr>
+			</table>
+
+			<h3>Search Engine API Usage</h3>
+			<p>Crawler based search engines such as Mojeek, Bing and Google, also provide their results to other search engines and services via APIs. We propose that these search engines, as Mojeek would do, include the ‘noml’ directive within their API response. Search API providers should make it part of their terms of API service that results labelled as such are not used for machine learning purposes by API end users.</p>
+
+			<h3>Conclusion</h3>
+			<p>This proposed solution achieves the desired goals, by simply adding one additional value to already existing methods, and without necessarily requiring more user-agents to be used.
+			<p>With this proposal creators and publishers can indicate separately whether they want content to be findable in search engines and/or used for machine learning.</p>
+
+			<h3 class="socials-header">Share the open letter</h3>
+			<table id="buttons" class="socials">
+				<tr>
+					<td><a href="https://twitter.com/intent/tweet?text=https%3A//noml.info"><img src=./images/svg/nav-soc-t.svg width="100%" alt="an icon representing twitter"></a></p></td>
+					<td><a href="https://www.reddit.com/submit?url=https%3A%2F%2Fnoml.info&title=NoML "><img src=./images/svg/nav-soc-r.svg width="100%" alt="an icon representing reddit"></a></p></td>
+					<td><a href="https://mastodonshare.com/?url=https://noml.info"><img src=./images/svg/nav-soc-m.svg width="100%" alt="an icon representing mastodon"></a></p></td>
+					<td><a href="https://www.facebook.com/sharer/sharer.php?u=https://noml.info"><img src=./images/svg/nav-soc-f.svg width="100%" alt="an icon representing facebook"></a></p></td>
+					<td><a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//noml.info"><img src=./images/svg/nav-soc-l.svg width="100%" alt="an icon representing linkedin"></a></p></td>
+				</tr>
+			</table>
+
+			<h2>Dear AI companies, Crawlers, Search Engines, ML Projects, Scrapers etc.</h2>
+			<p>We, the undersigned, support the adoption of this proposal, which enables creators, publishers, and all other content contributors on the web to indicate whether their content can be utilized for machine learning training and applications.</p>
+			<h3>Signatures from organisations and companies</h3>
+			<ul id="orgco">
+				<li><a href="https://www.mojeek.com/"><img src="./images/logos/mojeek.svg"></a><br> <i>Search Engine</i></li>
+			</ul>
+			<br>
+			<h3>Signatures from individuals</h3>
+			<ul id="individuals">
+				Turn on JavaScript to view signatures.
+			</ul>
+
+		</section>
+		<nav class="navbar">
+			<div class="inner">
+				<!-- NAVIGATION MENUS -->
+				<div class="menu">
+					<a href="https://github.com/PrivacyDingus/noml-open-letter/issues/new?assignees=PrivacyDingus&labels=&projects=&template=sign.md&title=SIGN%3A+NAME" class="nav-item btn-sign" target="_blank">Sign on GitHub</a>
+					<a href="https://blog.mojeek.com/" class="nav-item">Blog Post</a>
+					<a href="https://www.mojeek.com/about/press/" class="nav-item">Press</a>
+				</div>
+				<table id="buttons" class="socials">
+					<tr>
+						<td><a href="https://twitter.com/intent/tweet?text=https%3A//noml.info"><img src=./images/svg/nav-soc-t.svg width="100%" alt="an icon representing twitter"></a></p></td>
+						<td><a href="https://www.reddit.com/submit?url=https%3A%2F%2Fnoml.info&title=NoML "><img src=./images/svg/nav-soc-r.svg width="100%" alt="an icon representing reddit"></a></p></td>
+						<td><a href="https://mastodonshare.com/?url=https://noml.info"><img src=./images/svg/nav-soc-m.svg width="100%" alt="an icon representing mastodon"></a></p></td>
+						<td><a href="https://www.facebook.com/sharer/sharer.php?u=https://noml.info"><img src=./images/svg/nav-soc-f.svg width="100%" alt="an icon representing facebook"></a></p></td>
+						<td><a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//noml.info"><img src=./images/svg/nav-soc-l.svg width="100%" alt="an icon representing linkedin"></a></p></td>
+					</tr>
+				</table>
+			</div>
+		</nav>
+    </div>
+</body>
