@@ -106,6 +106,10 @@ ul {
       }
 
 
+    ul#orgco {
+      column-count: 1;
+    }
+
     ul {
       column-count: 1;
       }
