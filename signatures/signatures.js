@@ -6,5 +6,8 @@ let individuals = [{
 	"name": "Colin Hayhurst",
 	"url": "https://twitter.com/ColinHayhurst",
 	"affiliation": "Mojeek",
+}, {
+	"name": "Andreas Schamanek",
+	"affiliation": "Individual",
 },
 ]

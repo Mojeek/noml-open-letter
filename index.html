@@ -32,6 +32,7 @@
 			olIndividuals.innerHTML = ""
   		  shuffle(individuals);
 			individuals.forEach((individual) => {
+			  if (individual.url) {
 				let li = document.createElement("li")
 				let a = document.createElement("a")
 				let i = document.createElement("i")
@@ -43,6 +44,19 @@
 				li.appendChild(br)
 				li.appendChild(i)
 				olIndividuals.appendChild(li)
+			} else {
+				// The individual does not have a URL, so we will not create a link.
+				let li = document.createElement("li")
+				let a = document.createElement("a")
+				let i = document.createElement("i")
+				let br = document.createElement("br")
+				a.innerText = individual.name
+				i.innerText = `${individual.affiliation}`
+				li.appendChild(a)
+				li.appendChild(br)
+				li.appendChild(i)
+    			olIndividuals.appendChild(li)
+			}
 			})
 		})
 	</script>
