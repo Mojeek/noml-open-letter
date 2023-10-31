@@ -12,14 +12,16 @@ let individuals = [{
 },{
 	"name": "Nikolaos Dimitropoulos",
 	"affiliation": "Individual",
-},
-  {
+},{
 	"name": "Richard Lees",
 	"affiliation": "Mojeek",
-},
-  {
+},{
 	"name": "Jack Yan, CEO",
 	"url": "https://jyanet.com",
 	"affiliation": "Jack Yan & Associates",
+},{
+	"name": "Niklas Poslovski",
+	"url": "https://codeberg.org/nipos",
+	"affiliation": "Individual",
 },
 ]
