@@ -9,5 +9,17 @@ let individuals = [{
 }, {
 	"name": "Andreas Schamanek",
 	"affiliation": "Individual",
+},{
+	"name": "Nikolaos Dimitropoulos",
+	"affiliation": "Individual",
+},
+  {
+	"name": "Richard Lees",
+	"affiliation": "Mojeek",
+},
+  {
+	"name": "Jack Yan, CEO",
+	"url": "https://jyanet.com",
+	"affiliation": "Jack Yan & Associates",
 },
 ]
