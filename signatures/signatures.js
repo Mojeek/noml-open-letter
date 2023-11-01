@@ -23,5 +23,16 @@ let individuals = [{
 	"name": "Niklas Poslovski",
 	"url": "https://codeberg.org/nipos",
 	"affiliation": "Individual",
-},
+}, {
+	"name": "mirabilos",
+    "url": "http://www.mirbsd.org/",
+    "affiliation": "Individual",
+}, {
+	"name": "Bobby Hiltz",
+	"affiliation": "Individual",
+}, {
+	"name": "James North",
+    "url": "http://www.jamesnorth.net/",
+    "affiliation": "Individual",
+}
 ]
