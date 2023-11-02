@@ -60,7 +60,7 @@ ul {
 /* STUFF FOR BIGGER SCREENS*/
 @media screen and (min-width: 600px) {
      ol#individuals {
-        width: 100%;
+      width: 100%;
       columns: 1;
       display:inline;
       font-size: 14px;
