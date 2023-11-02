@@ -72,15 +72,17 @@ ul {
 
     ul#orgco {
       column-count: 3;
-    }
+      }
 
     table#buttons {
       width: 33%;
       }
 
-    ul {
-      column-count: 4;
-    }
+    #individuals li {
+     display: inline-block;
+     width: 25%; 
+     margin-bottom: 10px;
+      }
 
     .container {
       max-width: 80%;
