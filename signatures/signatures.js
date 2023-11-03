@@ -41,7 +41,7 @@ let individuals = [{
 },	{
 	"name": "Peter Beackley",
 	"url": "https://playfultechnology.co.uk",
-	"affiliation": "Playful Technology Limited",
+	"affiliation": "Playful Technology Ltd",
 },	{
 	"name": "Joe Devon",
 	"url": "https://www.linkedin.com/in/joedevon",
