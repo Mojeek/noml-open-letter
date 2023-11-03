@@ -46,5 +46,12 @@ let individuals = [{
 	"name": "Joe Devon",
 	"url": "https://www.linkedin.com/in/joedevon",
 	"affiliation": "Yuda Digital",
+},	{
+	"name": "Louise Winters",
+	"affiliation": "Individual",
+},	{
+	"name": "Robin Berjon",
+	"url": "https://berjon.com/",
+	"affiliation": "individual",
 }
 ]
