@@ -53,5 +53,36 @@ let individuals = [{
 	"name": "Robin Berjon",
 	"url": "https://berjon.com/",
 	"affiliation": "individual",
+},	{
+	"name": "Mike Bugembe",
+	"affiliation": "Together For Africa",
+},	{
+	"name": "Lily 'MinekPo1' A.N",
+	"affiliation": "Individual",
+},	{
+	"name": "Nigel Jacklin",
+	"url": "https://accord.me.uk/",
+	"affiliation": "individual",
+},	{
+	"name": "Timo Tijhof",
+	"url": "https://timotijhof.net/",
+	"affiliation": "individual",
+},	{
+	"name": "JacksonChen666",
+	"url": "https://jacksonchen666.com/",
+	"affiliation": "Individual",
+},	{
+	"name": "Rohan Kumar",
+	"url": "https://seirdy.one/",
+	"affiliation": "Individual",
+},	{
+	"name": "Petr Strnad",
+	"affiliation": "Individual",
+},	{
+	"name": "Innocent Tumwesigye",
+	"affiliation": "Mubende Miners",
+},	{
+	"name": "Rhodes Atukwase",
+	"affiliation": "Child Network Org",
 }
 ]

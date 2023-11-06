@@ -74,13 +74,22 @@ ul {
       column-count: 2;
       }
 
+    li#orgco {
+      margin: 10px 0;
+      padding-top: 5px;
+      }
+
+    li#orgcofirst {
+      padding-top: 5px;
+      }
+      
     table#buttons {
       width: 33%;
       }
 
     #individuals li {
      display: inline-block;
-     width: 25%; 
+     width: 25%;
      margin-bottom: 10px;
       }
 
@@ -111,6 +120,11 @@ ul {
     ul#orgco {
       column-count: 1;
     }
+
+    li#orgco {
+      margin: 10px 0;
+      padding-top: 5px;
+      }
 
     ul {
       column-count: 1;
@@ -185,6 +199,16 @@ ul {
     .menu .btn-sign {
         background: #7ABB3B;
         padding: 10px;
+        border: 1px solid #599e2d;
+        border-radius: 8px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu .btn-sign-email {
+        background: #1e1e1e;
+        padding: 10px;
+        margin-top: 5px;
         border: 1px solid #599e2d;
         border-radius: 8px;
         color: white;
