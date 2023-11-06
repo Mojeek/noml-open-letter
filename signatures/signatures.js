@@ -78,5 +78,11 @@ let individuals = [{
 },	{
 	"name": "Petr Strnad",
 	"affiliation": "Individual",
+},	{
+	"name": "Innocent Tumwesigye",
+	"affiliation": "Mubende Miners",
+},	{
+	"name": "Rhodes Atukwase",
+	"affiliation": "Child Network Org",
 }
 ]
