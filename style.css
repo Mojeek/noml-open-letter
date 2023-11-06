@@ -71,16 +71,26 @@ ul {
       }
 
     ul#orgco {
-      column-count: 2;
+      column-count: 2
+
       }
 
+    li#orgco {
+      margin: 10px 0;
+      padding-top: 5px;
+      }
+
+    li#orgcofirst {
+      padding-top: 5px;
+      }
+      
     table#buttons {
       width: 33%;
       }
 
     #individuals li {
      display: inline-block;
-     width: 25%; 
+     width: 25%;
      margin-bottom: 10px;
       }
 
@@ -111,6 +121,11 @@ ul {
     ul#orgco {
       column-count: 1;
     }
+
+    li#orgco {
+      margin: 10px 0;
+      padding-top: 5px;
+      }
 
     ul {
       column-count: 1;
