@@ -206,6 +206,16 @@ ul {
         text-decoration: none;
     }
 
+    .menu .btn-sign-email {
+        background: #1e1e1e;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #599e2d;
+        border-radius: 8px;
+        color: white;
+        text-decoration: none;
+    }
+
     .menu .btn-sign:hover {
         text-decoration: underline;
     }
