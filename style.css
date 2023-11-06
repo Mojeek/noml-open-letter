@@ -71,8 +71,7 @@ ul {
       }
 
     ul#orgco {
-      column-count: 2
-
+      column-count: 2;
       }
 
     li#orgco {
