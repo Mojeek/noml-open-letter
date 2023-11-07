@@ -62,7 +62,7 @@ let individuals = [{
 },	{
 	"name": "Nigel Jacklin",
 	"url": "https://accord.me.uk/",
-	"affiliation": "individual",
+	"affiliation": "Accord.me.uk",
 },	{
 	"name": "Timo Tijhof",
 	"url": "https://timotijhof.net/",
@@ -84,5 +84,9 @@ let individuals = [{
 },	{
 	"name": "Rhodes Atukwase",
 	"affiliation": "Child Network Org",
+},	{
+	"name": "Bruno Manach",
+	"url": "http://referencement.free.fr/",
+	"affiliation": "individual",
 }
 ]
