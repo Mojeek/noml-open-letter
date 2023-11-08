@@ -88,5 +88,21 @@ let individuals = [{
 	"name": "Bruno Manach",
 	"url": "http://referencement.free.fr/",
 	"affiliation": "individual",
+},	{
+	"name": "Haelwenn Monnier",
+	"url": "https://hacktivis.me/",
+	"affiliation": "Individual",
+},	{
+	"name": "Jakob Senkl",
+	"url": "https://notjakob.com",
+	"affiliation": "Individual",
+},	{
+	"name": "Milosz Galazka",
+	"url": "https://sleeplessbeastie.eu/",
+	"affiliation": "Individual",
+},	{
+	"name": "Miklo",
+	"url": "https://soc.citizen4.eu/profile/miklo",
+	"affiliation": "Citizen4",
 }
 ]
