@@ -104,5 +104,19 @@ let individuals = [{
 	"name": "Miklo",
 	"url": "https://soc.citizen4.eu/profile/miklo",
 	"affiliation": "Citizen4",
+},	{
+	"name": "Erik",
+	"affiliation": "Individual",
+},	{
+	"name": "Anthony D",
+	"url": "hostintheshell.wordpress.com",
+	"affiliation": "Individual",
+},	{
+	"name": "Jacob Trebil",
+	"affiliation": "Andi Search",
+},	{
+	"name": "rav3ndust",
+	"url": "https://rav3ndust.xyz",
+	"affiliation": "Ibara Software",
 }
 ]
