@@ -206,10 +206,10 @@ ul {
     }
 
     .menu .btn-sign-email {
-        background: #1e1e1e;
+        background: #333;
         padding: 10px;
         margin-top: 5px;
-        border: 1px solid #599e2d;
+        border: 1px solid #111;
         border-radius: 8px;
         color: white;
         text-decoration: none;
