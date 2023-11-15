@@ -118,5 +118,9 @@ let individuals = [{
 	"name": "rav3ndust",
 	"url": "https://rav3ndust.xyz",
 	"affiliation": "Ibara Software",
+},	{
+	"name": "Roman Láncoš",
+	"url": "https://jojoyou.org/",
+	"affiliation": "JojoYou",
 }
 ]
