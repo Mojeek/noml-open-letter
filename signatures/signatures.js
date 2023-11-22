@@ -119,6 +119,17 @@ let individuals = [{
 	"url": "https://rav3ndust.xyz",
 	"affiliation": "Ibara Software",
 },	{
+	"name": "Ryan Brown",
+	"url": "https://art-of-lockpicking.com/",
+	"affiliation": "Individual",
+},	{
+	"name": "Jacob Forget",
+	"url": "https://resulti.net/",
+	"affiliation": "Resulti",
+},	{
+	"name": "Przemysław Gasiński",
+	"affiliation": "Individual",
+},	{
 	"name": "Roman Láncoš",
 	"url": "https://jojoyou.org/",
 	"affiliation": "JojoYou",
