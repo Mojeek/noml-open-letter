@@ -133,5 +133,12 @@ let individuals = [{
 	"name": "Roman Láncoš",
 	"url": "https://jojoyou.org/",
 	"affiliation": "JojoYou",
+},	{
+	"name": "Alfonso Hernandez",
+	"url": "https://www.linkedin.com/in/alfonso-hernandez-21062a12b/",
+	"affiliation": "CEO Astian, Inc",
+},	{
+	"name": "Matthew Alp",
+	"affiliation": "x-Shopify",
 }
 ]
