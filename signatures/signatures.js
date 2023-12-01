@@ -140,5 +140,17 @@ let individuals = [{
 },	{
 	"name": "Matthew Alp",
 	"affiliation": "x-Shopify",
+},	{
+	"name": "Randell Brian Knight",
+	"url": "https://www.biodrop.io/RandellBrianKnight",
+	"affiliation": "Individual",
+},	{
+	"name": "Reza Almanda",
+	"url": "https://rezaalmanda.github.io",
+	"affiliation": "Individual",
+},	{
+	"name": "Edan Osborne",
+	"url": "https://deafeningcreationearthquake.neocities.org",
+	"affiliation": "Individual",
 }
 ]
