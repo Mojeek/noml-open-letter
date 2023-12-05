@@ -152,5 +152,8 @@ let individuals = [{
 	"name": "Edan Osborne",
 	"url": "https://deafeningcreationearthquake.neocities.org",
 	"affiliation": "Individual",
+},	{
+	"name": "jessie",
+	"affiliation": "Individual",
 }
 ]
