@@ -153,6 +153,10 @@ let individuals = [{
 	"url": "https://deafeningcreationearthquake.neocities.org",
 	"affiliation": "Individual",
 },	{
+	"name": "Candlewax",
+	"url": "https://social.vivaldi.net/@Candlewax",
+	"affiliation": "Individual",
+},	{
 	"name": "jessie",
 	"affiliation": "Individual",
 }
