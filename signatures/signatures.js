@@ -160,6 +160,9 @@ let individuals = [{
 	"name": "jessie",
 	"affiliation": "Individual",
 },	{
+	"name": "Alban LECOCQ",
+	"affiliation": "Individual",
+},	{
 	"name": "N. Jansen",
 	"affiliation": "Individual",
 }
