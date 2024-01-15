@@ -163,6 +163,14 @@ let individuals = [{
 	"name": "Alban LECOCQ",
 	"affiliation": "Individual",
 },	{
+	"name": "Stefan Judis",
+	"url": "www.stefanjudis.com",
+	"affiliation": "free",
+},	{
+	"name": "Maciej Pędzich",
+	"url": "https://maciejpedzi.ch",
+	"affiliation": "Individual",
+},	{
 	"name": "N. Jansen",
 	"affiliation": "Individual",
 }
