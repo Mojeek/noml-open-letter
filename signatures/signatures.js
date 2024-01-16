@@ -173,7 +173,11 @@ let individuals = [{
 },	{
 	"name": "Chris Heinz",
 	"url": "https://fu-no.de/",
-	"affiliation": "INDIVIDUAL",
+	"affiliation": "Individual",
+},	{
+	"name": "Hugh Maaskant",
+	"url": "https://github.com/hugh-maaskant",
+	"affiliation": "Individual",
 },	{
 	"name": "Bryce A. Lynch",
 	"url": "https://drwho.virtadpt.net/",
