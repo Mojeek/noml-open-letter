@@ -171,6 +171,14 @@ let individuals = [{
 	"url": "https://maciejpedzi.ch",
 	"affiliation": "Individual",
 },	{
+	"name": "Chris Heinz",
+	"url": "https://fu-no.de/",
+	"affiliation": "INDIVIDUAL",
+},	{
+	"name": "Bryce A. Lynch",
+	"url": "https://drwho.virtadpt.net/",
+	"affiliation": "Virtual Adept Networks",
+},	{
 	"name": "N. Jansen",
 	"affiliation": "Individual",
 }
