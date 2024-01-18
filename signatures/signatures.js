@@ -183,6 +183,10 @@ let individuals = [{
 	"url": "https://drwho.virtadpt.net/",
 	"affiliation": "Virtual Adept Networks",
 },	{
+	"name": "Gianmarco Gargiulo",
+	"url": "https://gianmarco.gg",
+	"affiliation": "Individual",
+},	{
 	"name": "N. Jansen",
 	"affiliation": "Individual",
 }
