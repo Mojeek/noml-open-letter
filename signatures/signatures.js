@@ -157,6 +157,10 @@ let individuals = [{
 	"url": "https://social.vivaldi.net/@Candlewax",
 	"affiliation": "Individual",
 },	{
+	"name": "Matias Lavik",
+	"url": "https://matiaslavik.codeberg.page",
+	"affiliation": "Individual",
+},	{
 	"name": "jessie",
 	"affiliation": "Individual",
 },	{
