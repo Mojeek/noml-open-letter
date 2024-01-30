@@ -187,6 +187,10 @@ let individuals = [{
 	"url": "https://gianmarco.gg",
 	"affiliation": "Individual",
 },	{
+	"name": "Casey Johnston",
+	"url": "https://www.shesabeast.co/",
+	"affiliation": "Individual",
+},	{
 	"name": "N. Jansen",
 	"affiliation": "Individual",
 }
