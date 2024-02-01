@@ -195,6 +195,10 @@ let individuals = [{
 	"url": "https://www.shesabeast.co/",
 	"affiliation": "Individual",
 },	{
+	"name": "Rich Lott",
+	"url": "https://artfulrobot.uk",
+	"affiliation": "Individual",
+},	{
 	"name": "N. Jansen",
 	"affiliation": "Individual",
 }
