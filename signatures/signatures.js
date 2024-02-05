@@ -199,6 +199,10 @@ let individuals = [{
 	"url": "https://artfulrobot.uk",
 	"affiliation": "Individual",
 },	{
+	"name": "Klaus Alexander Seiﬆrup",
+	"url": "https://kas.bio.link/",
+	"affiliation": "Individual",
+},	{
 	"name": "N. Jansen",
 	"affiliation": "Individual",
 }
