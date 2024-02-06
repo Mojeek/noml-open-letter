@@ -209,5 +209,9 @@ let individuals = [{
 },	{
 	"name": "N. Jansen",
 	"affiliation": "Individual",
+},	{
+	"name": "James Nock",
+	"url": "https://www.james-nock.co.uk/",
+	"affiliation": "Individual",
 }
 ]
