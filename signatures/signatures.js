@@ -195,6 +195,18 @@ let individuals = [{
 	"url": "https://www.shesabeast.co/",
 	"affiliation": "Individual",
 },	{
+	"name": "Rich Lott",
+	"url": "https://artfulrobot.uk",
+	"affiliation": "Individual",
+},	{
+	"name": "Reinout van Schouwen",
+	"url": "https://mastodon.green/@reinouts",
+	"affiliation": "Yoink B.V.",
+},	{
+	"name": "Klaus Alexander Seiﬆrup",
+	"url": "https://kas.bio.link/",
+	"affiliation": "Individual",
+},	{
 	"name": "N. Jansen",
 	"affiliation": "Individual",
 }
