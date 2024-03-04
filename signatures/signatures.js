@@ -210,6 +210,10 @@ let individuals = [{
 	"name": "N. Jansen",
 	"affiliation": "Individual",
 },	{
+	"name": "Ros Jackson",
+	"url": "https://www.rosjackson.co.uk/",
+	"affiliation": "Individual",
+},	{
 	"name": "André Jaenisch",
 	"url": "https://jaenis.ch/",
 	"affiliation": "André Jaenisch WD & C",
