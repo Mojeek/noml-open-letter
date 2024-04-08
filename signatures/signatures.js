@@ -210,6 +210,9 @@ let individuals = [{
 	"name": "N. Jansen",
 	"affiliation": "Individual",
 },	{
+	"name": "Mocking Blerd",
+	"affiliation": "Individual",
+},	{
 	"name": "Ros Jackson",
 	"url": "https://www.rosjackson.co.uk/",
 	"affiliation": "Individual",
@@ -217,6 +220,10 @@ let individuals = [{
 	"name": "André Jaenisch",
 	"url": "https://jaenis.ch/",
 	"affiliation": "André Jaenisch WD & C",
+},	{
+	"name": "girlbossceo (June)",
+	"url": "https://girlboss.ceo",
+	"affiliation": "Individual",
 },	{
 	"name": "James Nock",
 	"url": "https://www.james-nock.co.uk/",
