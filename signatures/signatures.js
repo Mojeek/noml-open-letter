@@ -225,6 +225,10 @@ let individuals = [{
 	"url": "https://girlboss.ceo",
 	"affiliation": "Individual",
 },	{
+	"name": "Matt Vestengen-Cox",
+	"url": "https://coxy.co",
+	"affiliation": "Individual",
+},	{
 	"name": "James Nock",
 	"url": "https://www.james-nock.co.uk/",
 	"affiliation": "Individual",
