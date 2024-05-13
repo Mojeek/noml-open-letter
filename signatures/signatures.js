@@ -232,5 +232,12 @@ let individuals = [{
 	"name": "James Nock",
 	"url": "https://www.james-nock.co.uk/",
 	"affiliation": "Individual",
+},	{
+	"name": "Tommi",
+	"url": "https://tommi.space/",
+	"affiliation": "Individual",
+},	{
+	"name": "Eric Cassidy",
+	"affiliation": "Individual",
 }
 ]
