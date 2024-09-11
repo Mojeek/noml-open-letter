@@ -250,5 +250,9 @@ let individuals = [{
 	"name": "Pelle Wessman",
 	"url": "https://voxpelli.com/",
 	"affiliation": "Individual",
+},	{
+	"name": "Pug",
+	"url": "https://pugdev.neocities.org/",
+	"affiliation": "Individual",
 }
 ]
