@@ -254,5 +254,8 @@ let individuals = [{
 	"name": "Pug",
 	"url": "https://pugdev.neocities.org/",
 	"affiliation": "Individual",
+},	{
+	"name": "Raphaël Maurille",
+	"affiliation": "Student",
 }
 ]
